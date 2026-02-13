@@ -1,0 +1,130 @@
+.navbar {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #a435f0;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #1c1d1f;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  color: #a435f0;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cart-link {
+  text-decoration: none;
+  color: #1c1d1f;
+  font-weight: 500;
+  position: relative;
+  padding: 8px 16px;
+  border: 1px solid #1c1d1f;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.cart-link:hover {
+  background: #1c1d1f;
+  color: white;
+}
+
+.cart-badge {
+  background: #ec5252;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.user-name {
+  color: #1c1d1f;
+  font-weight: 500;
+}
+
+.btn-login, .btn-logout {
+  background: none;
+  border: 1px solid #1c1d1f;
+  color: #1c1d1f;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover, .btn-logout:hover {
+  background: #1c1d1f;
+  color: white;
+}
+
+.btn-signup {
+  background: #a435f0;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn-signup:hover {
+  background: #8710d8;
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 20px;
+  }
+  
+  .navbar-menu {
+    margin: 15px 0;
+    gap: 20px;
+  }
+  
+  .navbar-actions {
+    gap: 10px;
+  }
+}

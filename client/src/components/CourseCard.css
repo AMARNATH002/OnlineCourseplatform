@@ -1,0 +1,160 @@
+.course-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.course-image {
+  position: relative;
+  height: 200px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-placeholder {
+  text-align: center;
+  color: white;
+}
+
+.course-icon {
+  font-size: 48px;
+}
+
+.recommended-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #f39c12;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.course-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1c1d1f;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.course-instructor {
+  color: #6c757d;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.course-description {
+  color: #4a5568;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.course-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.detail-label {
+  color: #6c757d;
+  margin-right: 4px;
+}
+
+.detail-value {
+  color: #1c1d1f;
+  font-weight: 500;
+}
+
+.course-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.stars {
+  display: flex;
+  margin-right: 8px;
+}
+
+.star {
+  color: #e0e0e0;
+  font-size: 16px;
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+.star.half {
+  color: #ffc107;
+}
+
+.rating-value {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.course-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.course-price {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.price-free {
+  color: #28a745;
+}
+
+.price-paid {
+  color: #1c1d1f;
+}
+
+.btn-add-cart {
+  background: #a435f0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-add-cart:hover:not(:disabled) {
+  background: #8710d8;
+}
+
+.btn-add-cart:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

@@ -1,0 +1,270 @@
+.checkout {
+  min-height: 100vh;
+  background: #f8f9fa;
+  padding: 20px 0;
+}
+
+.checkout-loading, .checkout-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  color: #6c757d;
+}
+
+.checkout-empty {
+  text-align: center;
+}
+
+.checkout-empty h2 {
+  font-size: 28px;
+  color: #1c1d1f;
+  margin-bottom: 15px;
+}
+
+.checkout-empty p {
+  margin-bottom: 25px;
+}
+
+.btn-browse {
+  background: #a435f0;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-browse:hover {
+  background: #8710d8;
+}
+
+.checkout-header {
+  margin-bottom: 30px;
+}
+
+.back-button {
+  background: none;
+  border: 1px solid #e0e0e0;
+  color: #6c757d;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: #f8f9fa;
+  color: #1c1d1f;
+}
+
+.checkout-header h1 {
+  font-size: 32px;
+  color: #1c1d1f;
+}
+
+.checkout-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.checkout-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.order-summary, .payment-method {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary h2, .payment-method h2 {
+  font-size: 24px;
+  color: #1c1d1f;
+  margin-bottom: 20px;
+}
+
+.course-section {
+  margin-bottom: 25px;
+}
+
+.course-section:last-child {
+  margin-bottom: 0;
+}
+
+.course-section h3 {
+  font-size: 18px;
+  color: #1c1d1f;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.checkout-course-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.checkout-course-item:last-child {
+  border-bottom: none;
+}
+
+.course-info h4 {
+  font-size: 16px;
+  color: #1c1d1f;
+  margin-bottom: 5px;
+}
+
+.course-info p {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.course-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1c1d1f;
+}
+
+.course-price.free {
+  color: #28a745;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.payment-option:hover {
+  border-color: #a435f0;
+}
+
+.payment-option input[type="radio"] {
+  margin-right: 12px;
+  accent-color: #a435f0;
+}
+
+.payment-option span {
+  font-weight: 500;
+  color: #1c1d1f;
+}
+
+.checkout-sidebar {
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+.price-summary {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.price-summary h3 {
+  font-size: 20px;
+  color: #1c1d1f;
+  margin-bottom: 20px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  color: #6c757d;
+}
+
+.price-row.total {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1c1d1f;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.free-courses-note {
+  background: #e8f5e8;
+  padding: 12px;
+  border-radius: 6px;
+  margin: 15px 0;
+}
+
+.free-courses-note p {
+  color: #28a745;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.btn-pay {
+  width: 100%;
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 20px 0;
+  transition: background 0.3s ease;
+}
+
+.btn-pay:hover:not(:disabled) {
+  background: #218838;
+}
+
+.btn-pay:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.security-note {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.security-note p {
+  color: #6c757d;
+  font-size: 12px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .checkout-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .checkout-main {
+    order: 2;
+  }
+  
+  .checkout-sidebar {
+    order: 1;
+    position: static;
+  }
+}
